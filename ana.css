@@ -1,11 +1,13 @@
 :root {
-    --arka-plan: #0f0f0f;
-    --yazi-rengi: #ffffff;
+    --ana-renk: aqua;
+    --arka-plan: black;
+    --yazi-rengi: white;
     --nav-renk: rgba(15, 15, 15, 0.9);
 }
 
 body.acik {
-    --ana-renk: #ff4d00;
+    --ana-renk: red;
+    --arka-plan: white;
     --yazi-rengi: #1a1a1a;
     --nav-renk: rgba(255, 255, 255, 0.9);
 }
@@ -14,6 +16,7 @@ body.acik {
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
+    
 }
 
 body {
@@ -21,6 +24,11 @@ body {
     color: var(--yazi-rengi);
     font-family: 'Segoe UI', Tahoma, sans-serif;
     line-height: 1.6;
+}
+
+#fare-nokta {
+    width: 8px; height: 8px; background: var(--ana-renk);
+    position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999;
 }
 
 #ana-nav {
