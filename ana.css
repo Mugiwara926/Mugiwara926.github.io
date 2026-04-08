@@ -138,9 +138,9 @@ body {
 }
 
 
-.iletisim-izgara {
+.iletisim-duzen {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; /* Form daha geniş, kart daha dar */
+    grid-template-columns: 1.5fr 1fr;
     gap: 30px;
     margin-top: 30px;
 }
