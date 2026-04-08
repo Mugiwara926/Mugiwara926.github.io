@@ -56,7 +56,11 @@ body {
 }
 .link-liste a:hover { color: var(--ana-renk); }
 
-
+.profil-foto { 
+    width: 250px; height: 250px; border-radius: 15px; 
+    object-fit: cover; 
+    
+}
 
 
 
