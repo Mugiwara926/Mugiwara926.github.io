@@ -18,7 +18,7 @@
             <ul class="link-liste">
                 <li><a href="#hakkında">Hakkımda</a></li>
                 <li><a href="#yet">Yetenekler ve Eğitim</a></li>
-                <li><a href="#prj">Projeler</a></li>
+                <li><a href="#prje">Projeler</a></li>
             </ul>
             <button id="tema-btn"><i class="fas fa-moon"></i></button>
         </div>
@@ -94,7 +94,17 @@
         </div>
     </section>
 
-    
+    <section id="prje" class="t-ekran">
+        <div class="yy">
+            <h2 class="bolum-baslik">Projeler</h2>
+            <div class="filtre-alan">
+                <button onclick="projeSuz('hepsi')" class="filtre-btn aktif">Hepsi</button>
+                <button onclick="projeSuz('web')" class="filtre-btn">Web</button>
+                <button onclick="projeSuz('oyun')" class="filtre-btn">Oyun</button>
+            </div>
+            <div id="proje-duzen" class="prj-duzen"></div>
+        </div>
+    </section>
 
     <footer id="footer">
         <div class="footer-icerik">
