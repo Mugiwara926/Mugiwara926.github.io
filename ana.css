@@ -55,9 +55,3 @@ body {
     transition: 0.3s; 
 }
 .link-liste a:hover { color: var(--ana-renk); }
-
-
-#pFgiris{
-    width: 100px;
-    height: 100px;
-}
