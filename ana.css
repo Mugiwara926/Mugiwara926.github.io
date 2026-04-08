@@ -56,11 +56,13 @@ body {
 }
 .link-liste a:hover { color: var(--ana-renk); }
 
+.t-ekran { min-height: 100vh; padding: 120px 10% 60px; }
 .profil-foto { 
     width: 250px; height: 250px; border-radius: 15px; 
     object-fit: cover; 
-    
+    border: 2px solid var(--ana-renk); 
 }
+
 
 
 
