@@ -212,3 +212,84 @@ body {
     transition: 0.3s; }
 .sosyal-medya a:hover { color: var(--ana-renk); }
 
+@media (max-width: 1024px) {
+    .t-ekran {
+        padding: 100px 5% 40px;
+    }
+
+    .uc-sutun {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+
+    .prj-duzen {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .iletisim-duzen {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #ana-nav {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link-liste {
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .link-liste a {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .hak-duzen {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    .uc-sutun {
+        grid-template-columns: 1fr;
+    }
+
+    .prj-dusen {
+        grid-template-columns: 1fr; 
+    }
+
+    .ana-kart {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cift-liste {
+        max-height: none; 
+    }
+
+    .cift-liste li {
+        width: 100%;
+    }
+
+    .nav-sag {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #tema-btn {
+        padding: 10px;
+    }
+}

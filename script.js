@@ -72,9 +72,9 @@ if (iletisimFormu) {
     });
 }
 
-
-
-
+if ('ontouchstart' in window) {
+    fare.style.display = "none";
+}
 
 window.onload = () => {
     projeSuz("hepsi");
