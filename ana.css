@@ -11,7 +11,7 @@ body.acik {
     --arka-plan: white;
     --yazi-rengi: #1a1a1a;
     --nav-renk: rgba(255, 255, 255, 0.9);
-    --kart-rengi: white;
+    --kart-rengi: lightgray;
 }
 
 * { 
@@ -135,6 +135,60 @@ body {
     padding: 20px; 
     border-radius: 15px; 
     border: 1px solid rgba(255,255,255,0.05); 
+}
+
+
+.iletisim-izgara {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Form daha geniş, kart daha dar */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#mesaj-formu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form-girdi {
+    padding: 12px 15px;
+    background: var(--arka-plan);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--yazi-rengi);
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.form-girdi:focus {
+    border-color: var(--ana-renk);
+}
+
+.form-btn {
+    padding: 12px;
+    background: var(--ana-renk);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+.iletisim-not {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-style: italic;
+    opacity: 0.7;
 }
 
 

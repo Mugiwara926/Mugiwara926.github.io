@@ -37,6 +37,20 @@ window.addEventListener("mousemove", (e) => {
     fare.style.top = e.clientY + "px";
 });
 
+function daktilo() {
+    const hedef = document.getElementById("daktilo");
+    const metin = "İlyas GÜNAY";
+    let i = 0;
+    const yaz = () => {
+        if (i < metin.length) {
+            hedef.innerHTML += metin.charAt(i);
+            i++;
+            setTimeout(yaz, 150);
+        }
+    };
+    yaz();
+}
+
 const barlar = document.querySelectorAll('.bar-ic');
         const gozlemci = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -47,6 +61,16 @@ const barlar = document.querySelectorAll('.bar-ic');
         }, { threshold: 0.5 });
 
 barlar.forEach(bar => gozlemci.observe(bar));
+
+const iletisimFormu = document.getElementById("mesaj-formu");
+if (iletisimFormu) {
+    iletisimFormu.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        alert("Mesajınız başarıyla gönderildi, en kısa sürede yanıylayacağım.");
+        iletisimFormu.reset();
+    });
+}
 
 
 
