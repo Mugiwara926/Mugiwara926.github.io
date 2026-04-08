@@ -40,6 +40,22 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
+.nav-sag {
+    display: flex; 
+    align-items: center; 
+}
+.link-liste {
+    display: flex; 
+    list-style: none; 
+    margin-right: 50px; 
+}
+.link-liste a {
+    color: var(--yazi-rengi); text-decoration: none; 
+    margin-left: 25px; 
+    transition: 0.3s; 
+}
+.link-liste a:hover { color: var(--ana-renk); }
+
 
 #pFgiris{
     width: 100px;
